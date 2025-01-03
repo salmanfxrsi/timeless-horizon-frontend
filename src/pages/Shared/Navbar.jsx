@@ -6,7 +6,7 @@ const Navbar = () => {
       <NavLink to="/" className=" text-lg">
         Home
       </NavLink>
-      <NavLink to="books" className="text-[#131313CC] text-lg">
+      <NavLink to="books" className="px-6 text-lg">
         Books
       </NavLink>
     </>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -40,12 +40,15 @@ const Navbar = () => {
               {links}
             </div>
           </div>
-          <Link to="/" className="text-[#131313] font-bold text-[28px]">
+          <Link
+            to="/"
+            className="text-[#131313] font-bold text-[28px] hidden sm:block"
+          >
             Timeless Horizon
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <div className="menu menu-horizontal px-1 flex gap-4 items-center">
+          <div className="menu menu-horizontal px-1 flex items-center">
             {links}
           </div>
         </div>
