@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Slide = ({ name, description, link, image }) => {
   return (
-    <div className="flex gap-[86px] bg-[#1313130D] rounded-3xl w-full py-[136px] px-[120px]">
+    <div className="flex flex-col lg:flex-row  gap-[86px] bg-[#1313130D] lg:rounded-3xl w-full py-[136px] px-[120px]">
       {/* Text Section */}
       <div className="flex-1">
         <h1 className="text-[#131313] font-bold text-[56px] mb-4">{name}</h1>
